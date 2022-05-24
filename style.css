@@ -1,0 +1,604 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*----------------------Header--------------------*/
+.topHeader{
+    display: flex;
+    width: 100%;
+    background-color: #446A46;
+  }
+  .topRedesSociales {
+    width: 100%;
+    padding: 9px;
+    
+  }
+
+  /*Logos redes*/
+  .topfacebookLogo {
+    width: 32px;
+    height: 32px;
+  }
+  .toptwitterLogo{
+    width: 31px;
+    height: 31px;
+  }
+  .topinstagramLogo {
+    width: 32px;
+    height: 32px;
+  }
+
+  /*Telefono*/
+  .telefono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .telefono img{
+      width: 32px;
+      height: 32px;
+  }
+
+
+
+
+            /*NAV*/
+nav{
+  background-color: #82A284;
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 30px;
+}
+.logo{
+    height: 40px;
+}
+
+.headerPaginas ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.headerPaginas ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.headerPaginas ul li a{
+    color: white;
+    font-size: 1.1rem;
+    padding: 7px 13px;
+    font-family: sans-serif;
+}
+
+.headerLi a.active, .headerLi a:hover{   /*Fondo en los <a> cuando los clickeas*/
+    background: #92b394;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+/*Boton celular*/
+.checkbtn{ 
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+
+
+/*-------------------------Fin (paginas) Header------------------------------*/
+ /*----Main-----*/
+   /*-------------------------Inicio Index (Inicio)------------------------------*/
+
+  /*Inicio Main*/
+  .fondo__index {                        /*Cambio color Main*/
+    background-color: white;
+  }
+
+  /*Inicio Portada*/
+  .contenedorPortada {
+    height: 86vh;
+    padding: 1%;
+  }
+  .portada {
+      background-image: url(../assets/foto_portada/paisaje-800x409.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 95%;
+  }
+  .parrafoUno{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*.parrafoDos{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+  }*/
+            
+  /* Fin Pordada */
+
+   /*Inicio Anuncio inscripcion*/
+   .anuncioInscripcion {
+    background-color: #DAF7A6;
+    text-align: center;
+    padding: 20px;
+  }
+  .anuncioInscripcion button{
+    background-color: #7eb17e; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  .anuncioInscripcion button:hover{
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+   /* Inicio Historia Resumida */
+
+ .resumenHistoriaTitulo{
+  text-align: center;
+  padding: 10px;
+  text-decoration-line:underline;
+  text-decoration: none;
+}
+
+.resumenHistoria {
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.2rem;
+   padding: 0px 200px;
+}
+
+/* Fin Historia resumida */
+
+/*Que ofrecemos cuadrados*/
+.container{
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem; 
+  padding: 50px 30px;  
+}
+  
+.containerUno, .containerDos, .containerTres{
+  padding: 50px 30px; 
+  background-color: rgb(221, 220, 220); 
+  flex-basis: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center;
+  border-radius: 25px;
+}
+
+.containerUno h1, .containerDos h1, .containerTres h1{
+  font-size: 2.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+/*---------------------------Footer----------------------------*/
+.footerContainer{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #82A284;
+}
+
+
+.footerLogo{
+  height: 100px;
+  width: 100px;
+}
+/*footer izquierda*/
+/*-Nav-*/
+.footerNav ul{
+  padding: 15px 0px 0px 0px;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  list-style: inside;
+}
+
+.footerLi a{
+  color: white;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+.footerLocacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*footer derecha*/
+.footerLocacion h2{
+  font-family: sans-serif;
+  font-size: 1.0rem;
+}
+.footerLocacion p{
+  font-size: 0.9rem;
+}
+
+.footerFinal{
+  display: flex;
+  justify-content: center;
+  background-color: #446A46;
+  width: 100%;
+  color: white;
+}
+/*--------------------------Galeria--------------------------*/
+
+.galeria{
+  padding: 5px;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+
+.galeriaDiv{
+  flex: 25%;
+  padding: 5px;
+
+}
+.galeriaDiv img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+  /*-------------------------Pagina Inscripcion------------------*/
+
+  /*Texto*/
+  .containerInscripcion{
+   background-color: white;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: space-around;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+  }
+
+  .divInscripcionTexto h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2rem;
+    color: rgb(39, 44, 44);
+  }
+
+  .divInscripcionTexto h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    padding: 10px 0px 20px 0px;
+  }
+
+  .divInscripcionTexto p {
+    font-family: sans-serif;
+    padding: 5px 0px 5px 0px;
+    font-size: 1rem;
+  }
+
+  .divInscripcionTexto h5 {
+    text-align: left;
+    color: cyan;
+  }
+  /*Fin Texto*/
+
+  .divInscripcionTexto hr {
+    border-top: 1px dotted black; 
+  }
+
+  /*Cuestionario*/
+
+  .botonesInscripcion{
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+
+  /*-------------------------Contacto------------------*/
+
+  /*Formulario contacto*/
+
+  main div h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+  .formularioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  .formularioContainer fieldset{
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 10px;
+  }
+
+  main div fieldset p { /*Preguntas*/
+    text-align: center;
+    font-family: sans-serif;
+    padding: 5px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+
+  main div fieldset p input{ /*Cajas*/
+    height: 25px;
+    width: 200px;
+    font-size: 1.2rem;
+  }
+
+  main div form p {/*Enviar/hacer de nuevo*/
+    text-align: center;
+  }
+
+  .botonesContacto{
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+  }
+
+  /*Informacion Contactos*/
+  .contactoContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+    padding: 50px 30px;  
+    width: 100%;
+  }
+
+  .contacto1, .contacto2, .contacto3{
+    padding: 50px 30px; 
+    background-color: rgb(165, 203, 235); 
+    flex-basis: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 25px;
+    
+  }
+  
+  .contacto1 h1, .contacto2 h1, .contacto3 h1{
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+  }
+
+  /*--------------------Quien Somos-----------------------*/
+  .contactoQuienSomos{
+    grid-template-columns: repeat(1, 4fr); 
+  }
+  /**/
+  .historiaParte1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    
+  }
+  .historiaParte1 img{
+    width: 400px;
+    
+  }
+  /**/
+  .historiaParte2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    
+  }
+  .historiaParte2 img{
+    width: 400px;
+    
+  }
+  /**/
+  .historiaParte3 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    
+  }
+  .historiaParte3 img{
+    width: 400px;
+    
+  }
+  /**/
+  .historiaParte4 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    
+  }
+  .historiaParte4 img{
+    width: 400px;
+  }
+  .historiaParte4 ul{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 982px){ /*Tablet*/
+  .telefono{
+    width: 30%;
+  }
+
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a {
+      font-size: 1.0rem;
+  }
+
+  /*Galeria*/
+
+  .galeriaDiv{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 858px){ /*Celular*/
+  /*-------Header-----------*/
+  .checkbtn{
+      display: block;
+  }
+  header nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color:#698b6b;
+      top: 120px;
+      position: absolute;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 100;
+      
+  }
+  .headerLi{ 
+      display: block !important;
+      margin: 50px 0px;
+      line-height: 30px;
+  }
+  .headerLi a{
+      font-size: 1.6rem;
+  }
+  .headerLi a:hover, .headerLi a.active{
+      background: none;
+      color: #92b394;
+      
+  }
+  #check:checked ~ ul {
+      left: 0%;
+  }
+              /*Redes-Telefono top*/
+.telefono{
+  display: none;
+}
+.topRedesSociales{
+  text-align: center;
+  padding: 5px 0px;
+}
+
+/*---------Main-------------*/
+
+.resumenHistoria {
+
+padding: 0px 50px;
+ }
+
+/*Que ofrecemos cajas // Telefono*/
+.container{
+    grid-template-columns: repeat(1, 3fr); 
+    grid-template-rows: repeat(3, 32%);
+  }
+
+
+
+  /*Footer*/
+  .footerContainer{
+    grid-template-columns: repeat(1,2fr);
+  }
+  .footerLocacion{
+    padding: 50px 0px 10px 0px;
+  }
+
+  /*------Galeria-------*/
+
+  .galeriaDiv{
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  /*--------Contacto---*/
+  .formularioContainer{
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    align-content: none;
+    flex-direction: column;
+    flex-wrap: none;
+    padding: 0px;
+ 
+  }
+  .contactoContainer{
+    grid-template-columns: repeat(1, 3fr); 
+    grid-template-rows: repeat(3, 32%);
+  }
+
+
+  /*Quien Somos*/
+  .historiaParte1, .historiaParte2, .historiaParte3, .historiaParte4{
+    flex-direction: column;
+  }
+}

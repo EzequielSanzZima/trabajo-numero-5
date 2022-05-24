@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Inscripcion</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Top Header-->
+        <div class="topHeader">
+            <div class="topRedesSociales">
+                <a href="https://es-la.facebook.com/"><img class="topfacebookLogo" src="../assets/header/facebook_internet_media_network_social_icon_123257.png" alt="facebook"></a>
+                <a href="https://twitter.com/?lang=es"><img class="toptwitterLogo"  src="../assets/header/twitter-logo-on-black-background_icon-icons.com_72503.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/"><img class="topinstagramLogo"  src="../assets/header/instagram_black_logo_icon_147122.png" alt="instagram"></a>
+            </div>
+            <div class="telefono">
+                  <img src="../assets/header/211829_telephone_icon.png" alt="">
+                 <span> 123-123-1232</span>
+            </div>
+        </div>
+        <!--Nav menu de paginas-->
+        <nav class="headerPaginas">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="../assets/header/logo2.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li class="headerLi"><a href="../index.html">Inicio</a></li>
+                <li class="headerLi"><a href="./contacto.html">Contacto</a></li>
+                <li class="headerLi"><a href="./quien_somos.html">Quien Somos</a></li>
+                <li class="headerLi"><a href="./inscripcion_2032.html" class="active">Inscripcion</a></li>
+                <li class="headerLi"><a href="./galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin Header-->
+    
+    <!--Inicio Main-->
+    <main>
+    
+        <div class="containerInscripcion">
+            <article>
+            <h2>Colegio Falso</h2>
+            <h3>Pre Inscripcion Ciclo Lectivo</h3>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis repellendus quaerat modi cupiditate expedita aperiam nulla explicabo fugiat, quasi placeat!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quia non culpa, dolorem dicta ab sapiente voluptates architecto molestiae dignissimos!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam temporibus laborum consectetur praesentium similique repudiandae molestiae assumenda labore. Perspiciatis, reprehenderit!</p>
+                    <h5>Todos los datos son necesarios</h5>
+                </div>
+            </article>
+            <hr>
+            <!--Formulario-->
+            <div class="preguntas">
+                <form>
+                    <fieldset>
+                        <!--Alumno-->
+                        <legend>Informacion del Alumno/a</legend>
+                        <p><label>Nombre y Apellido alumno/a:<input type="text" name="nombre"></label></p>
+                        <p><label>Numero DNI: <input type="number"> </label></p>
+                        <p><label>Dirección:<input type="text" name="nombre"></label></p>
+                        <p><label>Fecha de nacimiento:<input type="date" name="trip-start" min="1996-01-01" max="2020-01-01"></label></p>
+                        <p>
+                            Que nivel desea ingresar?
+                            <p><label><input type="checkbox" name="jardin"> Jardin</label></p>
+                            <p><label><input type="checkbox" name="primaria"> Primaria</label></p>
+                            <p><label><input type="checkbox" name="secundaria"> Secundaria</label></p>
+                        </p>
+                        <p>
+                            Que año quiere ingresar?
+                            <select name="año">
+                                <option value=""></option>
+                                <option value="">Sala de 3</option>
+                                <option value="">Sala de 4</option>
+                                <option value="">Sala de 5</option>
+                                <option value="">Primaria: Primero</option>
+                                <option value="">Primaria: Segundo</option>
+                                <option value="">Primaria: Tercero</option>
+                                <option value="">Primaria: Cuarto</option>
+                                <option value="">Primaria: Quinto</option>
+                                <option value="">Primaria: Sexto</option>
+                                <option value="">Secundaria: Primero</option>
+                                <option value="">Secundaria: Segundo</option>
+                                <option value="">Secundaria: Tercero</option>
+                                <option value="">Secundaria: Cuarto</option>
+                                <option value="">Secundaria: Quinto</option>
+                                <option value="">Secundaria: Sexto</option>
+                            </select>
+                        </p>
+                        <p>
+                            Turno:
+                            <select name="turno">
+                                <option value=""></option>
+                                <option value="">Mañana</option>
+                                <option value="">Tarde</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                    <!--Fin del Alumno-->
+                    <!--Tutor-->
+                    <fieldset>
+                        <legend>Informacion del Tutor</legend>
+                        <p><label>Nombre y Apellido del Tutor:<input type="text" name="nombre"></label></p>
+                        <p><label>Correo electronico:<input type="email" name="mail"></label></p>
+                        <p><label>Numero DNI: <input type="number"> </label></p>
+                        <p><label>Numero de telefono: <input type="number"> </label></p>
+
+                    </fieldset>
+                    <!--Fin del tutor-->
+                    <p class="botonesInscripcion">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Empezar de nuevo">
+                    </p>
+                </form> 
+                <!--Fin del Formulario-->
+            </div>
+        </div>
+        
+    </main>
+    <!--Fin Main-->
+    <!--Inicio Footer-->
+    <footer>
+        <div class="footerContainer">
+            <nav class="footerNav">
+                <ul>
+                    <li class="footerLi"><a href="../index.html">Inicio</a></li>
+                    <li class="footerLi"><a href="../subpaginas/contacto.html">Contacto</a></li>
+                    <li class="footerLi"><a href="./quien_somos.html">Quien Somos</a></li>
+                    <li class="footerLi"><a href="./inscripcion_2032.html">Inscripcion</a></li>
+                    <li class="footerLi"><a href="./galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+            <div class="footerLocacion">
+                <img class="footerLogo" src="../assets/header/logo2.png" alt="">
+                <h2>Lorem, ipsum dolor.- Lorem, ipsum.</h2>
+                <p>Lorem.</p>
+            </div>
+        </div>
+        <div class="footerFinal">
+            <p>Ezequiel Sanz Zima</p>
+        </div>
+    </footer>
+</body>
+</html>
