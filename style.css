@@ -145,13 +145,101 @@ nav{
     height: 86vh;
     padding: 1%;
   }
+
+
+
+
+
+
+  /*Transiones*/
+
+  .transicion { 
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    font-family: sans-serif;
+
+  }
+  .transicion:hover{
+    color:green
+  }
+  .transicion{
+    transition: color 0.10s linear 0.4s;
+  }
+
+  .containerCuadrado{
+    width: 200px;
+    height: 200px;
+    background: cyan;
+    position: relative;
+  }
+  .cuadradoEfecto {
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+    position: absolute;
+    right: 0;
+    height: 200px;
+    width: 50px;
+    background: #428bca;
+}
+.containerCuadrado:hover .cuadradoEfecto {
+  opacity: 1;
+}
+
+/*Animacion*/
+
+.animacion1{
+  animation-duration: 0.5s;
+  animation-name: parrafoCorrido;
+}
+@keyframes parrafoCorrido{
+  from{
+    margin-left: 100%;
+    width: 300%;
+  }
+  to{
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.animacion2{
+  animation-duration: 1s;
+  animation-name: textoGrande;
+  animation-iteration-count: infinite;
+}
+@keyframes textoGrande{
+  from{
+    font-size: 3rem;
+  }
+  to{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .portada {
       background-image: url(../assets/foto_portada/paisaje-800x409.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       height: 95%;
   }
-  .parrafoUno{
+  /*.parrafoUno{
     position: absolute;
     top: 50%;
     left: 50%;
